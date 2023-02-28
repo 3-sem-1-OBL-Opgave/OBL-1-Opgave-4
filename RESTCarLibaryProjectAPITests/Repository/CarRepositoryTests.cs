@@ -35,12 +35,13 @@ namespace RESTCarLibaryProjectAPI.Repository.Tests
         [TestMethod()]
         public void GetAllTest()
         {
-           /*
-            Test for:
-                * At listen ikke er null
-                * At listen indeholder det rette antal objekter
-            */
-                
+            #region Noter
+            /*
+             Test for:
+                 * At listen ikke er null
+                 * At listen indeholder det rette antal objekter
+             */
+            #endregion
             Assert.IsNotNull(testListOfCars, "List of cars is null");
             Assert.AreEqual(testListOfCars.Count(), 3, "The list does not contain the right number of cars");
         }
@@ -48,15 +49,17 @@ namespace RESTCarLibaryProjectAPI.Repository.Tests
         [TestMethod()]
         public void GetByIdTest()
         {
+            #region Noter
             /*
              Teste for:
                 * At det givne objekt findes eller ikke er null
                 * At objektet indeholder de rette instanser
              */
+            #endregion
             Assert.IsNotNull(testCar, "Car is null");
             Assert.AreEqual(testCarId, testCar.Id, "The id of the car are not equal the given argument");
-            Assert.AreEqual(testCarModel,testCar.Model, "The car model are not equal the given argument");
-            Assert.AreEqual(testCarLicensePlate,testCar.LicensePlate, "The licenseplate of the car are not equal the given argument");
+            Assert.AreEqual(testCarModel, testCar.Model, "The car model are not equal the given argument");
+            Assert.AreEqual(testCarLicensePlate, testCar.LicensePlate, "The licenseplate of the car are not equal the given argument");
             Assert.AreEqual(testCarPrice, testCar.Price, "The price of the car are not equal the given argument");
         }
 

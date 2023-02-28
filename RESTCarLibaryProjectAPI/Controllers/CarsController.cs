@@ -6,7 +6,7 @@ using RESTCarLibaryProjectAPI.Repository;
 
 namespace RESTCarLibaryProjectAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/cars")]
     [ApiController]
     public class CarsController : ControllerBase
     {
